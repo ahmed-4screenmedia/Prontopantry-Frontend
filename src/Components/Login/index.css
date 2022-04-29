@@ -1,0 +1,177 @@
+.container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-position: center center;
+  border-color: transparent;
+  border-style: solid;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  width: 146px;
+  display: block;
+  height: 50px;
+}
+
+.main_section_container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  opacity: 1;
+  display: flex;
+  width: 100%;
+  background-color: #000;
+}
+
+.text_contianer {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  width: 80vw;
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  z-index: 1;
+  color: white;
+  margin: 12.7% 0 0 11%;
+  flex-direction: column;
+}
+
+.form_container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  height: 364px;
+  width: 300px;
+  margin: 10.7% 12% 0 10%;
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  padding: 34px;
+}
+
+.header_text {
+  font-size: 70px;
+  line-height: 1.17;
+  font-weight: 600;
+}
+
+.sub_text {
+  font-size: 26px;
+  line-height: 1.14;
+  font-weight: 300;
+  margin-top: 20;
+}
+
+.main_section {
+  background-image: url("https://thumb.tildacdn.com/tild3939-3261-4835-b462-653964663538/-/format/webp/BG.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  background-attachment: fixed;
+  overflow: hidden;
+  color: #fff;
+  background-attachment: scroll;
+  transform: initial;
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  width: 310px;
+  height: 7vh;
+  font-weight: 600;
+  font-size: 17px;
+  border: solid black;
+}
+
+.input_fields {
+  margin-top: 10px;
+  background-color: #f0f0f0;
+  border: none;
+  height: 34px;
+  font-size: 16px;
+  width: 300px;
+  padding: 7px;
+}
+
+@media screen and (max-width: 1200px) {
+  .form_container {
+    max-width: 300px;
+    background-color: white;
+    margin: 10% 10% 0 16%;
+  }
+  .header_text {
+    font-size: 68px;
+  }
+  .sub_text {
+    font-size: 22px;
+  }
+  .text_contianer {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin: 4% 0 0 0;
+    font-family: "Roboto", Arial, sans-serif;
+    color: white;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .input_fields {
+    width: 55vw;
+  }
+  .form_container {
+    max-width: 100%;
+    width: 70%;
+    height: 55%;
+    float: none;
+    margin: 10% 10% 0 16%;
+    box-sizing: border-box;
+  }
+  .button {
+    width: 56vw;
+  }
+  .main_section {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header_text {
+    font-size: 32px;
+  }
+  .sub_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .header_text {
+    font-size: 30px;
+  }
+  .sub_text {
+    font-size: 18px;
+  }
+}
