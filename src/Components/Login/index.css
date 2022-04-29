@@ -51,9 +51,24 @@
   justify-content: space-around;
   justify-items: center;
   align-items: center;
-  height: 364px;
+  height: 480px;
   width: 300px;
   margin: 10.7% 12% 0 10%;
+  font-family: "Roboto", Arial, sans-serif;
+  position: relative;
+  padding: 34px;
+}
+
+.success_form_container{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+  height: 215px;
+  width: 300px;
+  margin: 13.7% 12% 0 10%;
   font-family: "Roboto", Arial, sans-serif;
   position: relative;
   padding: 34px;

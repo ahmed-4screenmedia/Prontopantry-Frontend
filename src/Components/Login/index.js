@@ -74,7 +74,7 @@ const Login = () => {
               convenience to apartment living.
             </div>
           </div>
-          <div className="form_container">
+          <div className={!success?"form_container":"success_form_container"}>
             <div
               style={{
                 color: "black",
@@ -121,7 +121,7 @@ const Login = () => {
                     }}
                   >
                     {" "}
-                    Enter valid email
+                    Please enter a valid email address
                   </p>
                 )}
                 <input
@@ -143,15 +143,46 @@ const Login = () => {
                     }}
                   >
                     {" "}
-                    Enter valid number
+                    Please put a correct phone number
                   </p>
                 )}
               </div>
             )}
+            {(invalidEmail || invalidNumber) && (
+              <div
+                style={{
+                  margin: 0,
+                  padding: 0,
+                  border: 0,
+                }}
+              >
+                <div
+                  style={{
+                    background: "#F95D51",
+                    padding: "10px",
+                    textAlign: "center",
+                    marginBottom: "20px",
+                    width:"300px"
+                  }}
+                >
+                  <div
+                    style={{
+                      padding: 0,
+                      fontSize: "16px",
+                    }}
+                  >
+                    {invalidEmail && <p>Please enter a valid email address</p>}
+                    {invalidNumber && <p>Please put a correct phone number</p>}
+                  </div>
+                </div>
+              </div>
+            )}
             {!success && (
-              <div style={{
-                  marginTop: "10px"
-              }}>
+              <div
+                style={{
+                  marginTop: "10px",
+                }}
+              >
                 <button onClick={validateFields} className="button">
                   Contact us
                 </button>
@@ -160,12 +191,15 @@ const Login = () => {
             {success && (
               <div
                 style={{
-                  color: "white",
-                  backgroundColor: "green",
-                  width: "13vw",
-                  height: "7vh",
+                  color: "#fff",
+                  backgroundColor: "#62C584",
+                  width: "15vw",
+                  height: "9vh",
                   display: "flex",
                   alignItems: "center",
+                  justifyContent:"center",
+                  fontSize: "16px",
+                  lineHeight: "1.4",
                 }}
               >
                 Thanks! We will be in touch.
