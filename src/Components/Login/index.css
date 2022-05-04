@@ -333,4 +333,7 @@
     margin: 10% 10% 0 20%;
     box-sizing: border-box;
   }
+  .button{
+    height: 11vh;
+  }
 }
