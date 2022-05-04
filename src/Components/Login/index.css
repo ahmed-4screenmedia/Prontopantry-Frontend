@@ -291,6 +291,13 @@
   }
 }
 
+@media screen and (max-height: 600px) {
+  .success_text{
+    height: 10vh;
+    width: 30vw;
+  }
+}
+
 @media screen and (max-height: 400px) {
   .form_container {
     max-width: 100%;
@@ -335,5 +342,9 @@
   }
   .button{
     height: 11vh;
+  }
+  .success_text{
+    height: 17vh;
+    width: 35vw;
   }
 }
