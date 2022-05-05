@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://34.234.225.253:8085",
+  baseURL: "https://dashboard.pronto-pantry.com",
   // baseURL:"http://localhost:8085"
 });
 
