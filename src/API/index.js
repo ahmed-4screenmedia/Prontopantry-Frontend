@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://34.234.225.253:8085",
+  // baseURL: "http://34.234.225.253:8085",
+  baseURL:"http://localhost:8085"
 });
 
 export const saveResidentFeedback = (body) => {
