@@ -85,7 +85,7 @@
   justify-items: center;
   align-items: center;
   height: 500px;
-  width: 360px;
+  width: 400px;
   /* margin: 9.6% 12% 0 10%; */
   font-family: "Roboto", Arial, sans-serif;
   position: relative;
@@ -215,7 +215,7 @@
 .button {
   background-color: black;
   color: white;
-  width: 313px;
+  width: 350px;
   height: 7vh;
   font-weight: 600;
   font-size: 17px;
@@ -229,7 +229,7 @@
   border: none;
   height: 34px;
   font-size: 13px;
-  width: 300px;
+  width: 333px;
   padding: 7px;
 }
 
