@@ -153,15 +153,16 @@ const Login = () => {
                   }
                 >
                   {(manager || resident) &&<div style={{
-                    height:10,
-                    width:10,
                     display:"flex",
                     alignSelf:"flex-start",
-                    paddingLeft:10
+                    paddingLeft:10,
+                    fontWeight:600,
+                    cursor:"pointer"
                   }}
                   onClick={() => clearFields()}
                   >
-                  <img src={BackArrow} style={{ height:21}}></img>
+                  {/* <img src={BackArrow} style={{ height:21}}></img> */}
+                  Home
                 </div>}
                   {success && (
                     <div
