@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Logo from "../../Assets/Images/Logo.webp";
 import BackGroundImage from "../../Assets/Images/BG.webp";
 import { saveResidentFeedback, saveManagerFeedback } from "../../API/index";
-import BackArrow from "../../Utils/Images/arrow.png"
+import BackArrow from "../../Utils/Images/arrow.png";
 import "./index.css";
 
 const Login = () => {
@@ -78,9 +78,10 @@ const Login = () => {
     const emailregex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const numberRegex = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 
-    const emailValidate = emailregex.test(email) ;
-    const numberValidate = numberRegex.test(number) ;
-    const nameValidate = registeredName !== "" && isNaN(Number(registeredName)) ? true : false;
+    const emailValidate = emailregex.test(email);
+    const numberValidate = numberRegex.test(number);
+    const nameValidate =
+      registeredName !== "" && isNaN(Number(registeredName)) ? true : false;
 
     if (email === "" && number === "" && registeredName === "") {
       setEmptyFields(true);
@@ -92,8 +93,6 @@ const Login = () => {
       nameValidate ? setInvalidName(false) : setInvalidName(true);
 
       selectedBuilding ? setChecked(false) : setChecked(true);
-
-
 
       let validated;
 
@@ -111,16 +110,15 @@ const Login = () => {
     }
   };
 
-  return (
-    <div className="container">
-      <div className="header">
-        <img src={Logo} className="img" />
-      </div>
+  const renderMainSectionContainer = () => {
+    return (
       <div className="main_section_container">
         <div className="backrground"></div>
         <div className="backrground_paper"></div>
         <div className="main_section">
-          <div className={success?"success_outer_container":"outer_container"}>
+          <div
+            className={success ? "success_outer_container" : "outer_container"}
+          >
             <div className="inner_container">
               <div className="text_container">
                 <div
@@ -152,18 +150,21 @@ const Login = () => {
                       : "form_container"
                   }
                 >
-                  {(manager || resident) &&<div style={{
-                    display:"flex",
-                    alignSelf:"flex-start",
-                    paddingLeft:10,
-                    fontWeight:600,
-                    cursor:"pointer"
-                  }}
-                  onClick={() => clearFields()}
-                  >
-                  {/* <img src={BackArrow} style={{ height:21}}></img> */}
-                  Home
-                </div>}
+                  {(manager || resident) && (
+                    <div
+                      style={{
+                        display: "flex",
+                        alignSelf: "flex-start",
+                        paddingLeft: 10,
+                        fontWeight: 600,
+                        cursor: "pointer",
+                      }}
+                      onClick={() => clearFields()}
+                    >
+                      {/* <img src={BackArrow} style={{ height:21}}></img> */}
+                      Home
+                    </div>
+                  )}
                   {success && (
                     <div
                       style={{
@@ -176,7 +177,7 @@ const Login = () => {
                     </div>
                   )}
                   {!manager && !resident && !success && (
-                    <div>
+                    <div style={{ width: "100%" }}>
                       <div
                         style={{
                           color: "black",
@@ -199,24 +200,26 @@ const Login = () => {
                       </div>
                       <div
                         style={{
-                          marginTop: "10px",
+                          marginTop: "20px",
                         }}
                       >
                         <button
                           onClick={() => setResident(true)}
                           className="button"
+                          style={{ width: "100%" }}
                         >
                           I am a building resident
                         </button>
                       </div>
                       <div
                         style={{
-                          marginTop: "10px",
+                          marginTop: "20px",
                         }}
                       >
                         <button
                           onClick={() => setManager(true)}
                           className="button"
+                          style={{ width: "100%" }}
                         >
                           I am a building manager
                         </button>
@@ -230,6 +233,7 @@ const Login = () => {
                         flexDirection: "column",
                         justifyContent: "space-between",
                         maxWidth: "1000px",
+                        width: "80%",
                       }}
                     >
                       {manager && (
@@ -315,6 +319,7 @@ const Login = () => {
                                 color: "red",
                                 fontSize: "12px",
                                 textAlign: "left",
+                                fontWeight: 300,
                               }}
                             >
                               {" "}
@@ -397,7 +402,7 @@ const Login = () => {
                             color: "black",
                             fontSize: "15px",
                             textAlign: "left",
-                            marginTop: "10px",
+                            marginTop: "25px",
                           }}
                         >
                           {" "}
@@ -429,43 +434,46 @@ const Login = () => {
                     </div>
                   )}
                   {/* {(invalidEmail || invalidNumber || emptyFields) && (
+          <div
+            style={{
+              margin: 0,
+              padding: 0,
+              border: 0,
+            }}
+          >
+            <div
+              style={{
+                background: "#F95D51",
+                padding: "10px",
+                textAlign: "center",
+                width: "300px",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: emptyFields?"20px" : invalidEmail || invalidNumber? "45px": "20px",
+                marginTop: "10px",
+              }}
+            >
               <div
                 style={{
-                  margin: 0,
                   padding: 0,
-                  border: 0,
+                  fontSize: "16px",
                 }}
               >
-                <div
-                  style={{
-                    background: "#F95D51",
-                    padding: "10px",
-                    textAlign: "center",
-                    width: "300px",
-                    display: "flex",
-                    justifyContent: "center",
-                    alignItems: "center",
-                    height: emptyFields?"20px" : invalidEmail || invalidNumber? "45px": "20px",
-                    marginTop: "10px",
-                  }}
-                >
-                  <div
-                    style={{
-                      padding: 0,
-                      fontSize: "16px",
-                    }}
-                  >
-                    {invalidEmail && <p>Please enter a valid email address</p>}
-                    {invalidNumber && <p>Please put a correct phone number</p>}
-                    {emptyFields && <p>None of the fields are filled in</p>}
-                  </div>
-                </div>
+                {invalidEmail && <p>Please enter a valid email address</p>}
+                {invalidNumber && <p>Please put a correct phone number</p>}
+                {emptyFields && <p>None of the fields are filled in</p>}
               </div>
-            )} */}
+            </div>
+          </div>
+        )} */}
                   {(manager || resident) && (
                     <div
                       style={{
-                        marginTop: "10px",
+                        width:"100%",
+                        marginTop: "35px",
+                        display: "flex",
+                        justifyContent: "center",
                       }}
                     >
                       <button onClick={validateFields} className="button">
@@ -479,13 +487,7 @@ const Login = () => {
                     </div>
                   )}
                   {(resident || manager || success) && (
-                    <div
-                      style={{
-                        color: "black",
-                        marginTop: "12px",
-                        fontWeight: 300,
-                      }}
-                    >
+                    <div className="form_fotter">
                       By signing up, you agree to our Privacy Policy.
                     </div>
                   )}
@@ -495,6 +497,15 @@ const Login = () => {
           </div>
         </div>
       </div>
+    );
+  };
+
+  return (
+    <div className="container">
+      <div className="header">
+        <img src={Logo} className="img" />
+      </div>
+      {renderMainSectionContainer()}
       <div
         style={{
           backgroundColor: "black",
