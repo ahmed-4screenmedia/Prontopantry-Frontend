@@ -83,9 +83,13 @@ const Login = () => {
     const nameValidate =
       registeredName !== "" && isNaN(Number(registeredName)) ? true : false;
 
-    if (email === "" && number === "" && registeredName === "") {
+    if (manager && email === "" && number === "" && registeredName === "") {
       setEmptyFields(true);
-    } else {
+    } else if(resident && email === "" && registeredName === "" && selectedBuilding === ""){
+      setEmptyFields(true);
+    }else {
+      setEmptyFields(false);
+
       emailValidate ? setInvalidEmail(false) : setInvalidEmail(true);
 
       numberValidate ? setInvalidNumber(false) : setInvalidNumber(true);
