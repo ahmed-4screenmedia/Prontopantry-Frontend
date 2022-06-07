@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, } from "react";
+import { useNavigate } from "react-router-dom";
 import Logo from "../../Assets/Images/Logo.webp";
 import BackGroundImage from "../../Assets/Images/BG.webp";
 import { saveResidentFeedback, saveManagerFeedback } from "../../API/index";
@@ -20,6 +21,8 @@ const Login = () => {
   const [selectedBuilding, setSlectedBuilding] = useState("");
   const [buildingName, setBuildingName] = useState("");
   const [buildingLocation, setBuildingLocation] = useState("");
+
+  const history = useNavigate()
 
   const clearFields = () => {
     setEmail("");
@@ -492,7 +495,7 @@ const Login = () => {
                   )}
                   {(resident || manager || success) && (
                     <div className="form_fotter">
-                      By signing up, you agree to our Privacy Policy.
+                      By signing up, you agree to our <a onClick={() => history('/termsofservice')} style={{ cursor:"pointer", color:"blue"}}>Privacy Policy.</a>
                     </div>
                   )}
                 </div>
