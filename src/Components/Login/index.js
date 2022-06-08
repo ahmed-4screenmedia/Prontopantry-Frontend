@@ -495,7 +495,7 @@ const Login = () => {
                   )}
                   {(resident || manager || success) && (
                     <div className="form_fotter">
-                      By signing up, you agree to our <a onClick={() => history('/termsofservice')} style={{ cursor:"pointer", color:"blue"}}>Privacy Policy.</a>
+                      By signing up, you agree to our <a onClick={() => history('/termsofservice')} style={{ cursor:"pointer", color:"blue"}}>Terms of Service.</a>
                     </div>
                   )}
                 </div>
