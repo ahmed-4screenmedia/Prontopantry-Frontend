@@ -17,70 +17,7 @@ const TermsOfService = () => {
             style={{ width: 80, height: 25, marginLeft: 0 }}
           />
           <h1>Terms of service</h1>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
-          <p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p><p> hsdj s fsgdfskdhfkjsdfsdhkf  sdf sdhf sdh fsdfsdhfj dhs fdshf sdfsd fdskjfkhsdkfhs 
-               sjkldfj sldflsldf skdf sdk gh oitdkjbsidfgidusdfgbiodsbnldsi
-          </p>
+          
         </div>
       </div>
     </div>
