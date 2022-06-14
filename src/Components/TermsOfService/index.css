@@ -65,14 +65,14 @@
 
 .main_title {
   margin-bottom: 0px;
-  font-family: "Roboto, Arial, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 38px;
 }
 
 .title_sub {
   margin-top: 0px;
   color: #3b3434;
-  font-family: "Roboto, Arial, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
 }
 
@@ -85,12 +85,12 @@
 
 .content_list_header {
   margin-top: 5%;
-  font-family: "Roboto, Arial, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .table_list_container {
   margin-top: 3%;
-  font-family: "Roboto, Arial, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
   text-align: "left";
 }
 
@@ -100,18 +100,25 @@ a {
 
 .list_text {
   margin-top: 10px;
-  font-family: "Roboto, Arial, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .desc_container {
   margin-top: 5%;
-  font-family: "Roboto, Arial, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .desc_header {
   font-size: 20px;
   font-weight: bold;
   text-align: left;
+}
+
+.desc_paragraph {
+  margin-top: 2%;
+  text-align: left;
+  display: flex;
+  align-self: flex-start;
 }
 
 .list_link {
@@ -227,7 +234,7 @@ ul.list_2 {
     align-items: center;
     width: 100%;
     margin: 4% 0 0 0;
-    font-family: "Roboto", Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
     flex-direction: column;
     height: auto;

@@ -183,14 +183,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">1. AGREEMENT TO TERMS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -219,14 +212,7 @@ const TermsOfService = () => {
                 IMMEDIATELY.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -248,14 +234,7 @@ const TermsOfService = () => {
                 date such revised Terms of Use are posted.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -273,14 +252,7 @@ const TermsOfService = () => {
                 local laws are applicable.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -295,14 +267,7 @@ const TermsOfService = () => {
                 that would violate the Gramm-Leach-Bliley Act (GLBA).
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -321,14 +286,7 @@ const TermsOfService = () => {
                 2. INTELLECTUAL PROPERTY RIGHTS
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -354,14 +312,7 @@ const TermsOfService = () => {
                 without our express prior written permission.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -381,14 +332,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">3. USER REPRESENTATIONS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -408,14 +352,7 @@ const TermsOfService = () => {
                 of the Site will not violate any applicable law or regulation.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -433,14 +370,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">4. USER REGISTRATION</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -460,14 +390,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">5. PRODUCTS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -492,14 +415,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">6. PURCHASES AND PAYMENT</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -509,14 +425,7 @@ const TermsOfService = () => {
                 We accept the following forms of payment:
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <ul
                 style={{
                   fontSize: 14,
@@ -530,14 +439,7 @@ const TermsOfService = () => {
                 <li style={{ margin: 0 }}>- PayPal</li>
               </ul>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -555,14 +457,7 @@ const TermsOfService = () => {
                 dollars.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -577,14 +472,7 @@ const TermsOfService = () => {
                 requested or received payment.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -606,14 +494,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">7. RETURN/REFUNDS POLICY</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -629,14 +510,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">8. PROHIBITED ACTIVITIES</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -649,14 +523,7 @@ const TermsOfService = () => {
                 that are specifically endorsed or approved by us.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -666,15 +533,7 @@ const TermsOfService = () => {
                 As a user of the Site, you agree not to:
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                // marginLeft: "5%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <ul
                 style={{
                   fontSize: 14,
@@ -811,14 +670,7 @@ const TermsOfService = () => {
                 9. USER GENERATED CONTRIBUTIONS
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -841,15 +693,7 @@ const TermsOfService = () => {
                 that:
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                // marginLeft: "5%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <ul
                 style={{
                   fontSize: 14,
@@ -927,14 +771,7 @@ const TermsOfService = () => {
                 </li>
               </ul>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -952,14 +789,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">10. CONTRIBUTION LICENSE</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -985,14 +815,7 @@ const TermsOfService = () => {
                 media channels.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1008,14 +831,7 @@ const TermsOfService = () => {
                 otherwise been asserted in your Contributions.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1033,14 +849,7 @@ const TermsOfService = () => {
                 action against us regarding your Contributions.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1062,14 +871,7 @@ const TermsOfService = () => {
                 11. MOBILE APPLICATION LICENSE
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 18,
@@ -1079,14 +881,7 @@ const TermsOfService = () => {
                 Use License
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1125,14 +920,7 @@ const TermsOfService = () => {
                 application.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 18,
@@ -1142,14 +930,7 @@ const TermsOfService = () => {
                 Apple and Android Devices
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1202,14 +983,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">12. SOCIAL MEDIA</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1274,14 +1048,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">13. SUBMISSIONS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1311,14 +1078,7 @@ const TermsOfService = () => {
                 14. THIRD-PARTY WEBSITE AND CONTENT
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1367,14 +1127,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">15. ADVERTISERS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1400,14 +1153,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">16. SITE MANAGEMENT</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1436,14 +1182,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">17. PRIVACY POLICY</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1475,14 +1214,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">18. TERM AND TERMINATION</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1503,14 +1235,7 @@ const TermsOfService = () => {
                 POSTED AT ANY TIME, WITHOUT WARNING, IN OUR SOLE DISCRETION.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1534,14 +1259,7 @@ const TermsOfService = () => {
                 19. MODIFICATIONS AND INTERRUPTIONS
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1558,14 +1276,7 @@ const TermsOfService = () => {
                 discontinuance of the Site or the Marketplace Offerings.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1594,14 +1305,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">20. GOVERNING LAW</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1620,14 +1324,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">21. DISPUTE RESOLUTION</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 18,
@@ -1637,14 +1334,7 @@ const TermsOfService = () => {
                 Informal Negotiations
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1662,14 +1352,7 @@ const TermsOfService = () => {
                 written notice from one Party to the other Party.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 18,
@@ -1679,14 +1362,7 @@ const TermsOfService = () => {
                 Binding Arbitration
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1723,14 +1399,7 @@ const TermsOfService = () => {
                 arbitrator.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1749,14 +1418,7 @@ const TermsOfService = () => {
                 Terms of Use.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1774,14 +1436,7 @@ const TermsOfService = () => {
                 submit to the personal jurisdiction of that court.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 18,
@@ -1791,14 +1446,7 @@ const TermsOfService = () => {
                 Restrictions
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1815,14 +1463,7 @@ const TermsOfService = () => {
                 capacity on behalf of the general public or any other persons.
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 18,
@@ -1832,14 +1473,7 @@ const TermsOfService = () => {
                 Exceptions to Informal Negotiations and Arbitration
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1867,14 +1501,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">22. CORRECTIONS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1895,14 +1522,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">23. DISCLAIMER</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1947,14 +1567,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">24. LIMITATIONS OF LIABILITY</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -1983,14 +1596,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">25. INDEMNIFICATION</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -2022,14 +1628,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">26. USER DATA</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -2054,14 +1653,7 @@ const TermsOfService = () => {
                 27. ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -2092,14 +1684,7 @@ const TermsOfService = () => {
                 28. CALIFORNIA USERS AND RESIDENTS
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -2119,14 +1704,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">29. MISCELLANEOUS</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -2161,14 +1739,7 @@ const TermsOfService = () => {
             <div style={{ alignSelf: "flex-start", display: "flex" }}>
               <span className="desc_header">30. CONTACT US</span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
@@ -2180,14 +1751,7 @@ const TermsOfService = () => {
                 at:
               </span>
             </div>
-            <div
-              style={{
-                alignSelf: "flex-start",
-                display: "flex",
-                marginTop: "2%",
-                textAlign: "left",
-              }}
-            >
+            <div className="desc_paragraph">
               <span
                 style={{
                   fontSize: 14,
