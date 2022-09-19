@@ -1,4 +1,4 @@
-import React, { useState, } from "react";
+import React, { useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Logo from "../../Assets/Images/Logo.webp";
 import BackGroundImage from "../../Assets/Images/BG.webp";
@@ -10,6 +10,8 @@ const Login = () => {
   const [registeredName, setRegisterdName] = useState("");
   const [email, setEmail] = useState("");
   const [number, setNumber] = useState("");
+  const [unitNumber, setUnitNumber] = useState("");
+  const [answer, setAnswer] = useState([""]);
   const [invalidEmail, setInvalidEmail] = useState(false);
   const [invalidNumber, setInvalidNumber] = useState(false);
   const [invalidName, setInvalidName] = useState(false);
@@ -22,7 +24,7 @@ const Login = () => {
   const [buildingName, setBuildingName] = useState("");
   const [buildingLocation, setBuildingLocation] = useState("");
 
-  const history = useNavigate()
+  const history = useNavigate();
 
   const clearFields = () => {
     setEmail("");
@@ -36,6 +38,14 @@ const Login = () => {
     setManager(false);
     setResident(false);
     setEmptyFields(false);
+    setAnswer([""]);
+    setUnitNumber("");
+  };
+
+  const handleOnAddItems = () => {
+    const tempAns = [...answer];
+    tempAns.push("");
+    setAnswer(tempAns);
   };
 
   const handleOnSaveDetails = () => {
@@ -45,6 +55,12 @@ const Login = () => {
         name: registeredName,
         number: number,
         email: email,
+        questions: {
+          question: `What are the top 5 items would you like us to carry in
+          the pantry?`,
+          answer: answer,
+        },
+        unitNumber: unitNumber,
       };
 
       saveResidentFeedback(body)
@@ -88,9 +104,14 @@ const Login = () => {
 
     if (manager && email === "" && number === "" && registeredName === "") {
       setEmptyFields(true);
-    } else if(resident && email === "" && registeredName === "" && selectedBuilding === ""){
+    } else if (
+      resident &&
+      email === "" &&
+      registeredName === "" &&
+      selectedBuilding === ""
+    ) {
       setEmptyFields(true);
-    }else {
+    } else {
       setEmptyFields(false);
 
       emailValidate ? setInvalidEmail(false) : setInvalidEmail(true);
@@ -235,13 +256,12 @@ const Login = () => {
                   )}
                   {(manager || resident) && (
                     <div
-                      style={{
-                        display: "flex",
-                        flexDirection: "column",
-                        justifyContent: "space-between",
-                        maxWidth: "1000px",
-                        width: "80%",
-                      }}
+                      id="form"
+                      className={
+                        resident
+                          ? "form_text_fields_container"
+                          : "form_text_fields_container_manager"
+                      }
                     >
                       {manager && (
                         <div
@@ -335,74 +355,123 @@ const Login = () => {
                           )}
                         </div>
                       )}
-                      <input
-                        className="input_fields"
-                        type="text"
-                        name="Name"
-                        placeholder="Your Name"
-                        value={registeredName}
-                        onChange={(event) => {
-                          setRegisterdName(event.target.value);
-                        }}
-                      />
-                      {(invalidName || emptyFields) && (
-                        <p
-                          style={{
-                            color: "red",
-                            fontSize: "12px",
-                            textAlign: "left",
-                          }}
-                        >
-                          {" "}
-                          Please put a name
-                        </p>
-                      )}
-                      {manager && (
+                      <div style={{ display: "flex", flexDirection: "column" }}>
                         <input
                           className="input_fields"
                           type="text"
-                          name="Building Name"
-                          placeholder="Building Name where you would like Pronto Pantry"
-                          value={buildingName}
+                          name="Name"
+                          placeholder="Your Name"
+                          value={registeredName}
                           onChange={(event) => {
-                            setBuildingName(event.target.value);
+                            setRegisterdName(event.target.value);
                           }}
                         />
-                      )}
-                      {manager && (
+                        {(invalidName || emptyFields) && (
+                          <p
+                            style={{
+                              color: "red",
+                              fontSize: "12px",
+                              textAlign: "left",
+                            }}
+                          >
+                            {" "}
+                            Please put a name
+                          </p>
+                        )}
+                        {manager && (
+                          <input
+                            className="input_fields"
+                            type="text"
+                            name="Building Name"
+                            placeholder="Building Name where you would like Pronto Pantry"
+                            value={buildingName}
+                            onChange={(event) => {
+                              setBuildingName(event.target.value);
+                            }}
+                          />
+                        )}
+                        {manager && (
+                          <input
+                            className="input_fields"
+                            type="text"
+                            name="Building Location"
+                            placeholder="Building Location"
+                            value={buildingLocation}
+                            onChange={(event) => {
+                              setBuildingLocation(event.target.value);
+                            }}
+                          />
+                        )}
+                        <input
+                          className="input_fields"
+                          type="email"
+                          name="Email"
+                          placeholder="Email"
+                          value={email}
+                          onChange={(event) => {
+                            setEmail(event.target.value);
+                          }}
+                        />
+                        {resident && (
+                          <input
+                            className="input_fields"
+                            type="number"
+                            name="Unit number"
+                            placeholder="Unit number"
+                            value={unitNumber}
+                            onChange={(event) => {
+                              setUnitNumber(event.target.value);
+                            }}
+                          />
+                        )}
+                        {(invalidEmail || emptyFields) && (
+                          <p
+                            style={{
+                              color: "red",
+                              fontSize: "12px",
+                              textAlign: "left",
+                            }}
+                          >
+                            {" "}
+                            Please enter a valid email address
+                          </p>
+                        )}
+                        {resident && (
+                          <div
+                            style={{
+                              color: "black",
+                              fontSize: "15px",
+                              textAlign: "left",
+                              marginTop: "25px",
+                            }}
+                          >
+                            {" "}
+                            Join us at the opening party - get notified!
+                          </div>
+                        )}
                         <input
                           className="input_fields"
                           type="text"
-                          name="Building Location"
-                          placeholder="Building Location"
-                          value={buildingLocation}
+                          name="Phone Number"
+                          placeholder="Your Phone Number"
+                          value={number}
                           onChange={(event) => {
-                            setBuildingLocation(event.target.value);
+                            setNumber(event.target.value);
                           }}
                         />
-                      )}
-                      <input
-                        className="input_fields"
-                        type="email"
-                        name="Email"
-                        placeholder="Email"
-                        value={email}
-                        onChange={(event) => {
-                          setEmail(event.target.value);
-                        }}
-                      />
-                      {(invalidEmail || emptyFields) && (
-                        <p
-                          style={{
-                            color: "red",
-                            fontSize: "12px",
-                            textAlign: "left",
-                          }}
-                        >
-                          {" "}
-                          Please enter a valid email address
-                        </p>
-                      )}
+                        {(invalidNumber || emptyFields) && !resident && (
+                          <p
+                            style={{
+                              color: "red",
+                              fontSize: "12px",
+                              textAlign: "left",
+                            }}
+                          >
+                            {" "}
+                            Please put a valid phone number
+                          </p>
+                        )}
+                      </div>
                       {resident && (
                         <div
                           style={{
@@ -413,71 +482,53 @@ const Login = () => {
                           }}
                         >
                           {" "}
-                          Join us at the opening party - get notified!
+                          What are the top 5 items would you like us to carry in
+                          the pantry?
                         </div>
                       )}
-                      <input
-                        className="input_fields"
-                        type="text"
-                        name="Phone Number"
-                        placeholder="Your Phone Number"
-                        value={number}
-                        onChange={(event) => {
-                          setNumber(event.target.value);
-                        }}
-                      />
-                      {(invalidNumber || emptyFields) && !resident && (
-                        <p
-                          style={{
-                            color: "red",
-                            fontSize: "12px",
-                            textAlign: "left",
-                          }}
+                      {resident && (
+                        <div
+                          style={{ display: "flex", flexDirection: "column" }}
                         >
-                          {" "}
-                          Please put a valid phone number
-                        </p>
+                          {answer.map((item, index) => {
+                            return (
+                              <input
+                                className="input_fields"
+                                type="text"
+                                name={"Item " + (index + 1)}
+                                placeholder={"Item " + (index + 1)}
+                                value={answer[index]}
+                                onChange={(event) => {
+                                  const temp = [...answer];
+                                  temp[index] = event.target.value;
+                                  setAnswer(temp);
+                                }}
+                              />
+                            );
+                          })}
+                        </div>
+                      )}
+                      {resident && answer.length < 5 && (
+                        <div
+                          style={{
+                            display: "flex",
+                            alignSelf: "flex-end",
+                            paddingLeft: 10,
+                            fontWeight: 600,
+                            cursor: "pointer",
+                            fontSize: 12,
+                          }}
+                          onClick={handleOnAddItems}
+                        >
+                          Add another item
+                        </div>
                       )}
                     </div>
                   )}
-                  {/* {(invalidEmail || invalidNumber || emptyFields) && (
-          <div
-            style={{
-              margin: 0,
-              padding: 0,
-              border: 0,
-            }}
-          >
-            <div
-              style={{
-                background: "#F95D51",
-                padding: "10px",
-                textAlign: "center",
-                width: "300px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: emptyFields?"20px" : invalidEmail || invalidNumber? "45px": "20px",
-                marginTop: "10px",
-              }}
-            >
-              <div
-                style={{
-                  padding: 0,
-                  fontSize: "16px",
-                }}
-              >
-                {invalidEmail && <p>Please enter a valid email address</p>}
-                {invalidNumber && <p>Please put a correct phone number</p>}
-                {emptyFields && <p>None of the fields are filled in</p>}
-              </div>
-            </div>
-          </div>
-        )} */}
                   {(manager || resident) && (
                     <div
                       style={{
-                        width:"100%",
+                        width: "100%",
                         marginTop: "35px",
                         display: "flex",
                         justifyContent: "center",
@@ -495,7 +546,13 @@ const Login = () => {
                   )}
                   {(resident || manager || success) && (
                     <div className="form_fotter">
-                      By signing up, you agree to our <a onClick={() => history('/termsofservice')} style={{ cursor:"pointer", color:"blue"}}>Terms of Service.</a>
+                      By signing up, you agree to our{" "}
+                      <a
+                        onClick={() => history("/termsofservice")}
+                        style={{ cursor: "pointer", color: "blue" }}
+                      >
+                        Terms of Service.
+                      </a>
                     </div>
                   )}
                 </div>
