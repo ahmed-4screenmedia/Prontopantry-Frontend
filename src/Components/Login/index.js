@@ -56,11 +56,10 @@ const Login = () => {
         number: number,
         email: email,
         questions: {
-          question: `What are the top 5 items would you like us to carry in
-          the pantry?`,
-          answer: answer,
+          question: `What are the top 5 items would you like us to carry in the pantry?`,
+          answers: answer,
         },
-        unitNumber: unitNumber,
+        unit: unitNumber,
       };
 
       saveResidentFeedback(body)
