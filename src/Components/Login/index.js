@@ -411,18 +411,6 @@ const Login = () => {
                             setEmail(event.target.value);
                           }}
                         />
-                        {resident && (
-                          <input
-                            className="input_fields"
-                            type="number"
-                            name="Unit number"
-                            placeholder="Unit number"
-                            value={unitNumber}
-                            onChange={(event) => {
-                              setUnitNumber(event.target.value);
-                            }}
-                          />
-                        )}
                         {(invalidEmail || emptyFields) && (
                           <p
                             style={{
@@ -435,6 +423,19 @@ const Login = () => {
                             Please enter a valid email address
                           </p>
                         )}
+                        {resident && (
+                          <input
+                            className="input_fields"
+                            type="number"
+                            name="Unit number"
+                            placeholder="Unit number"
+                            value={unitNumber}
+                            onChange={(event) => {
+                              setUnitNumber(event.target.value);
+                            }}
+                          />
+                        )}
+
                         {resident && (
                           <div
                             style={{
@@ -453,9 +454,12 @@ const Login = () => {
                           type="text"
                           name="Phone Number"
                           placeholder="Your Phone Number"
+                          maxLength={10}
                           value={number}
                           onChange={(event) => {
-                            setNumber(event.target.value);
+                            if (/^\d*\.?\d*$/.test(event.target.value)) {
+                              setNumber(event.target.value);
+                            }
                           }}
                         />
                         {(invalidNumber || emptyFields) && !resident && (
