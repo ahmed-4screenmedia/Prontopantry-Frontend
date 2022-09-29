@@ -423,7 +423,7 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 10% 10% 0 20%;
     box-sizing: border-box;
   }
-  .inner_container{
+  .inner_container {
     display: table;
   }
   .button {
@@ -464,7 +464,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .form_text_fields_container {
     height: 420px;
-}
+  }
   .sub_text {
     font-size: 20px;
   }
@@ -509,7 +509,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .form_text_fields_container {
     height: 420px;
-}
+  }
   .initial_form_container {
     max-width: 100%;
     width: 95%;
@@ -556,83 +556,31 @@ input[type="number"]::-webkit-outer-spin-button {
     box-sizing: border-box;
   }
 }
+@media screen and (max-height: 760px) {
+  /* .inner_container {
+    margin-bottom: 10%;
+  } */
+  .form_text_fields_container {
+    height: 430px;
+  }
+}
 
 @media screen and (max-height: 600px) {
   .success_text {
     height: 10vh;
     width: 30vw;
   }
+  .inner_container {
+    margin-bottom: 20%;
+  }
+  .form_text_fields_container {
+    height: 300px;
+  }
+  .form_text_fields_container_manager {
+    height: 300px;
+    overflow-y: auto;
+  }
 }
-
-/* @media screen and (max-height: 1180px) {
-  .main_section {
-    max-width: 640px;
-    height: 450px;
-    padding: 0;
-  }
-  .text_container {
-    float: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .outer_form_container {
-    float: none;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .input_fields {
-    width: 40vw;
-  }
-  .form_container {
-    max-width: 100%;
-    width: 65%;
-    height: 65%;
-    float: none;
-    margin: 1% 10% 0 16%;
-    box-sizing: border-box;
-  }
-  .error_form_container {
-    max-width: 100%;
-    width: 60%;
-    height: 65%;
-    float: none;
-    margin: 1% 10% 0 16%;
-    box-sizing: border-box;
-  }
-  .initial_form_container {
-    max-width: 100%;
-    width: 60%;
-    height: 40%;
-    float: none;
-    margin: 10% 10% 0 20%;
-    box-sizing: border-box;
-  }
-  .button {
-    width: 40vw;
-    height: 5vh;
-    font-size: 15px;
-  }
-  .success_form_container {
-    width: 35%;
-    margin: 10.7% 12% 0 33%;
-  }
-  .success_text {
-    width: 30vh;
-  }
-  .backrground{
-    height: 1100px;
-  }
-  .backrground_paper{
-    height: 1100px;
-  }
-  .main_section_container{
-    height: 1100px;
-  }
-} */
 
 @media screen and (max-height: 400px) {
   .form_container {
