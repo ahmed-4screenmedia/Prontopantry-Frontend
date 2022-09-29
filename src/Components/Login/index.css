@@ -285,7 +285,7 @@ input[type="number"]::-webkit-outer-spin-button {
   justify-content: space-around;
   justify-items: center;
   align-items: center;
-  height: 650px;
+  /* height: 650px; */
   width: 400px;
   /* margin: 9.6% 12% 0 10%; */
   font-family: "Roboto", Arial, sans-serif;
