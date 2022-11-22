@@ -39,24 +39,24 @@
 .receiptImageContainer {
   height: auto;
   position: absolute;
-  right: 30px;
+  right: 15%;
   /* top: -158px; */
   bottom: -80px;
 }
 
 .mobileImageContainer {
-  width: 40%;
+  width: 38%;
   height: 80%;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url("../../Assets/Images/Mobile.png");
+  background-image: url("../../Assets/Images/Mobile.svg");
   position: relative;
 }
 
 .arrowImageContainer {
   height: 75px;
   position: absolute;
-  right: 145px;
+  right: 22%;
   top: -50px;
 }
 

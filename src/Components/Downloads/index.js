@@ -2,12 +2,12 @@
 import React from "react";
 import "./index.css";
 import PDF from "../../Assets/DownloadPage.pdf";
-import Logo from "../../Assets/Images/LogoWhite.png";
+import Logo from "../../Assets/Images/prontologo22.svg";
 import QR from "../../Assets/Images/QR.jpg";
-import APPSTORE from "../../Assets/Images/AppStore.png";
-import PLAYSTORE from "../../Assets/Images/PlayStore.png";
-import RECEIPT from "../../Assets/Images/Receipt.png";
-import ARROW from "../../Assets/Images/Arrow.png";
+import APPSTORE from "../../Assets/Images/AppStore.svg";
+import PLAYSTORE from "../../Assets/Images/PlayStore.svg";
+import RECEIPT from "../../Assets/Images/Receipt.svg";
+import ARROW from "../../Assets/Images/Arrow.svg";
 
 const Downloads = (props) => {
   const renderQRContainer = () => {
@@ -59,7 +59,8 @@ const Downloads = (props) => {
         <div
           style={{
             height: "40px",
-            width: "100%",
+            width: "30%",
+            display: "flex",
             borderRadius: "12px",
             justifyContent: "space-around",
             marginTop: "20px",
@@ -69,13 +70,25 @@ const Downloads = (props) => {
             src={APPSTORE}
             style={{
               height: "100%",
+              // width:'50%'
             }}
+            onClick={() =>
+              window.open(
+                "https://apps.apple.com/us/app/pronto-pantry/id1496061157"
+              )
+            }
           />
           <img
             src={PLAYSTORE}
             style={{
               height: "100%",
+              // width:'50%'
             }}
+            onClick={() =>
+              window.open(
+                "https://play.google.com/store/apps/details?id=com.pronto_pantry.app&hl=en_US&gl=US"
+              )
+            }
           />
         </div>
       </div>
@@ -98,7 +111,7 @@ const Downloads = (props) => {
             display: "flex",
             flexDirection: "column",
             textAlign: "initial",
-            padding: "0 90px",
+            paddingLeft: 85,
           }}
         >
           <div style={{ marginBottom: "10%" }}>
