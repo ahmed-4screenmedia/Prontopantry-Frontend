@@ -70,6 +70,7 @@ const Downloads = (props) => {
             src={APPSTORE}
             style={{
               height: "100%",
+              cursor: "pointer",
               // width:'50%'
             }}
             onClick={() =>
@@ -82,6 +83,7 @@ const Downloads = (props) => {
             src={PLAYSTORE}
             style={{
               height: "100%",
+              cursor: "pointer",
               // width:'50%'
             }}
             onClick={() =>
